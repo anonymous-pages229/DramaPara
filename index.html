@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DramaPara - Project Page</title>
+  <meta name="description" content="DramaPara: A TV Drama Dataset for Enhancing Paralinguistic Understanding in Large Audio-Language Models" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="container">
+      <p class="badge">Interspeech Submission</p>
+      <h1>DRAMAPARA</h1>
+      <h2>A TV Drama Dataset for Enhancing Paralinguistic Understanding in Large Audio-Language Models</h2>
+
+      <p class="authors">Anonymous Authors (Under Review)</p>
+
+      <div class="links">
+        <a href="#" aria-label="Paper PDF link">Paper</a>
+        <a href="#" aria-label="arXiv link">arXiv</a>
+        <a href="#" aria-label="Code link">Code</a>
+        <a href="#" aria-label="Dataset link">Dataset</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="abstract">
+      <div class="container narrow">
+        <h3>Abstract</h3>
+        <p>
+          Large audio-language models (LAMs) struggle to parse paralinguistics (e.g., emotion, intonation)
+          in acoustically complex environments. Existing datasets rely heavily on clean speech or studio
+          recordings, causing a domain gap to real-world usage. We introduce <strong>DramaPara</strong>, a TV
+          drama dataset with expressive emotions and naturalistic background effects for robust
+          paralinguistic understanding. DramaPara includes two tasks: single-utterance isolated description
+          (~492h) and multi-utterance sequential description (~213h). With mixed training (SFT + RL),
+          open-source LAMs achieve a <strong>30.93% average relative improvement</strong> in complex scenarios.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alt" id="highlights">
+      <div class="container">
+        <h3>Key Figures</h3>
+
+        <article class="figure-card">
+          <h4>Task Paradigms</h4>
+          <div class="figure-wrap">
+            <object data="figs/task_fig.pdf" type="application/pdf" class="pdf-figure">
+              <p>Preview unavailable. Open figure: <a href="figs/task_fig.pdf">task_fig.pdf</a></p>
+            </object>
+          </div>
+        </article>
+
+        <article class="figure-card">
+          <h4>Annotation Pipeline</h4>
+          <div class="figure-wrap">
+            <object data="figs/data_annotation.pdf" type="application/pdf" class="pdf-figure">
+              <p>Preview unavailable. Open figure: <a href="figs/data_annotation.pdf">data_annotation.pdf</a></p>
+            </object>
+          </div>
+        </article>
+
+        <article class="figure-card">
+          <h4>Inference &amp; Evaluation Pipeline</h4>
+          <div class="figure-wrap">
+            <object data="figs/infer_eval.pdf" type="application/pdf" class="pdf-figure">
+              <p>Preview unavailable. Open figure: <a href="figs/infer_eval.pdf">infer_eval.pdf</a></p>
+            </object>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="audio-samples">
+      <div class="container">
+        <h3>Audio Samples</h3>
+        <p class="section-intro">Replace placeholder files with your selected examples later.</p>
+
+        <div class="audio-grid">
+          <article class="audio-card">
+            <h4>Sample A: Single-Utterance</h4>
+            <p>Emotion-rich clip in noisy background.</p>
+            <audio controls preload="none" src="samples/sample_a.wav"></audio>
+          </article>
+
+          <article class="audio-card">
+            <h4>Sample B: Multi-Utterance</h4>
+            <p>Sequential emotional transition in dialogue.</p>
+            <audio controls preload="none" src="samples/sample_b.wav"></audio>
+          </article>
+
+          <article class="audio-card">
+            <h4>Sample C: Complex Scene</h4>
+            <p>Overlap of speech and environmental effects.</p>
+            <audio controls preload="none" src="samples/sample_c.wav"></audio>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© DramaPara Project</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
