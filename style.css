@@ -162,6 +162,18 @@ a:hover {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.source-list {
+  margin: 0;
+  padding-left: 20px;
+  columns: 2;
+  column-gap: 28px;
+}
+
+.source-list li {
+  margin: 4px 0;
+  break-inside: avoid;
+}
+
 audio {
   width: 100%;
   margin-top: 6px;
@@ -192,5 +204,9 @@ audio {
 
   .audio-grid.fixed-three {
     grid-template-columns: 1fr;
+  }
+
+  .source-list {
+    columns: 1;
   }
 }
